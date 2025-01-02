@@ -1,60 +1,117 @@
+# DDoS-Node
 
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Yarn](https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
-# 📱 Secure . Seamless
-
-### One-to-one secure and seamless video and text chat app made with
-
-## 🔧 Tech Stack
-
-Frontend:
-
-- ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) 
-- ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)  
-
- Backend: 
-
-- ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-- ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-- ![Socket.io](https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socket.io&logoColor=white) 
-
- Video: 
-
-- ![Video SDK](https://img.shields.io/badge/Video_SDK-FF5722?style=for-the-badge&logo=video&logoColor=white) 
----
-
-## 📸 Features
-
-- Secure one-to-one video and text chat
-- Images and media sharing capabilities
-- Real-time communication with Socket.io
+A Node.js project to simulate and defend against DDoS attacks, built with a modern backend tech stack. This repository is focused on learning and implementing measures to strengthen backend resilience against attacks.
 
 ---
 
-### 📂 How to Install and Run
+## Features
 
-1.  Clone the repository: 
-   git clone https://github.com/ctrly4sh/Mee-u.git
-   cd Mee-U
-    
+- Simulate a DDoS attack on the backend.
+- Implement strategies to prevent and mitigate DDoS attacks.
+- Explore backend security best practices.
+- Use Docker for containerized deployments.
 
-2.  Install dependencies: 
-   npm install
-    
+---
 
-3.  Run the application: 
-   npm start
-    
+## Tech Stack
 
-### 💡 Future Enhancements
+- **Node.js**: Runtime environment
+- **Express**: Web framework
+- **MongoDB**: Database for logging and monitoring traffic patterns
+- **TypeScript**: Typed JavaScript for robust development
+- **Yarn**: Package manager
+- **Docker**: For containerization and deployment
 
-- Group chat functionality
-- End-to-end encryption
-- Better UI/UX enhancements
+---
 
-Feel free to reach out if you have any questions or suggestions!
+## Prerequisites
 
--  Email:  [y4sh.dev@gmail.com](mailto:y4sh.dev@gmail.com)
+- [Node.js](https://nodejs.org/) installed
+- [Yarn](https://yarnpkg.com/) installed
+- [Docker](https://www.docker.com/) installed (optional, but recommended)
 
-### 🎉 Thank you for checking out my project!
+---
 
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/DDoS-Node.git
+   cd DDoS-Node
+   ```
+
+2. Install dependencies:
+   ```bash
+   yarn install
+   ```
+
+3. Create a `.env` file for environment variables by following the `.env-example` file:
+   ```env
+   PORT=3000
+   MONGO_URI=your_mongodb_cluster_uri
+   ```
+
+4. Start the development server:
+   ```bash
+   yarn dev
+   ```
+
+---
+
+## Docker Integration
+
+To run the project with Docker:
+
+1. Build the Docker image:
+   ```bash
+   docker build -t ddos-node .
+   ```
+
+2. Run the container:
+   ```bash
+   docker run -p 3000:3000 --env-file .env ddos-node
+   ```
+
+3. Access the application at [http://localhost:3000](http://localhost:3000).
+
+---
+
+## Folder Structure
+
+```
+DDoS-Node/
+├── src/
+│   ├── controllers/
+│   ├── middlewares/
+│   ├── models/
+│   ├── routes/
+│   └── app.ts
+├── .env
+├── Dockerfile
+├── package.json
+├── tsconfig.json
+└── README.md
+```
+
+---
+
+## Future Enhancements
+
+- Implement other types of backend attack simulations (e.g., SQL Injection, CSRF).
+- Add advanced traffic monitoring and logging.
+- Create detailed dashboards for request analytics.
+
+---
+
+## Contributing
+
+Feel free to open issues and submit pull requests for improvements and new features!
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
 
